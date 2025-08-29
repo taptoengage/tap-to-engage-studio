@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 export default {
-	darkMode: ["class"],
 	content: [
 		"./pages/**/*.{ts,tsx}",
 		"./components/**/*.{ts,tsx}",
@@ -18,7 +17,23 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				serif: ['var(--font-serif)'],
+				sans: ['var(--font-sans)'],
+			},
+			fontSize: {
+				'base': ['17px', '1.6'],
+				'lg': ['18px', '1.7'],
+			},
 			colors: {
+				/* Brand colors */
+				ink: 'hsl(var(--ink))',
+				soil: 'hsl(var(--soil))',
+				paper: 'hsl(var(--paper))',
+				linen: 'hsl(var(--linen))',
+				sepia: 'hsl(var(--sepia))',
+				
+				/* Semantic tokens */
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -32,10 +47,6 @@ export default {
 					DEFAULT: 'hsl(var(--secondary))',
 					foreground: 'hsl(var(--secondary-foreground))'
 				},
-				destructive: {
-					DEFAULT: 'hsl(var(--destructive))',
-					foreground: 'hsl(var(--destructive-foreground))'
-				},
 				muted: {
 					DEFAULT: 'hsl(var(--muted))',
 					foreground: 'hsl(var(--muted-foreground))'
@@ -44,24 +55,10 @@ export default {
 					DEFAULT: 'hsl(var(--accent))',
 					foreground: 'hsl(var(--accent-foreground))'
 				},
-				popover: {
-					DEFAULT: 'hsl(var(--popover))',
-					foreground: 'hsl(var(--popover-foreground))'
-				},
 				card: {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
