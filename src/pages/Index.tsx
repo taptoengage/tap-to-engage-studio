@@ -65,6 +65,7 @@ const Index = () => {
             description="A client-management platform for personal trainers, built around smart scheduling and clear credit redemption."
             linkText="See product"
             href="https://optimisedtrainer.com"
+            openInNewTab
           />
           <WorkItem
             title="The Commissioner"

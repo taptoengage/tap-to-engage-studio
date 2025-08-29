@@ -4,9 +4,10 @@ interface WorkItemProps {
   linkText: string;
   href?: string;
   isLast?: boolean;
+  openInNewTab?: boolean;
 }
 
-const WorkItem = ({ title, description, linkText, href = "#contact", isLast = false }: WorkItemProps) => {
+const WorkItem = ({ title, description, linkText, href = "#contact", isLast = false, openInNewTab = false }: WorkItemProps) => {
   return (
     <div className={`py-8 ${!isLast ? 'border-b border-sepia/20' : ''}`}>
       <div className="space-y-3">
@@ -19,6 +20,7 @@ const WorkItem = ({ title, description, linkText, href = "#contact", isLast = fa
         <a 
           href={href}
           className="inline-block text-sm text-accent hover:text-foreground transition-colors duration-150"
+          {...(openInNewTab && { target: "_blank", rel: "noopener noreferrer" })}
         >
           {linkText}
         </a>
