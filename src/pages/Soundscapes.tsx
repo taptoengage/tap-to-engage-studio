@@ -29,34 +29,37 @@ const Soundscapes = () => {
           {/* Opening line */}
           <div className="text-center">
             <p className="font-soundscapes-sans text-xl leading-relaxed text-soundscapes-graphite">
-              A place for listening.
+              Step away from the noise.
             </p>
           </div>
           
           {/* Main description */}
           <div className="text-center max-w-2xl mx-auto">
             <p className="font-soundscapes-sans text-lg leading-relaxed text-soundscapes-graphite mb-16">
-              Soundscapes is a slow, thoughtful retreat shaped around a reference-grade audio system. Architecture, landscape and light set the stage; the music does the rest.
+              A place where time slows, and the details begin to matter again.
             </p>
           </div>
           
           {/* Feature sections */}
           <div className="space-y-12 max-w-2xl mx-auto">
-            <div>
-              <h3 className="font-soundscapes-serif font-light text-xl text-soundscapes-graphite mb-4">
-                Less noise, more presence.
-              </h3>
-              <p className="font-soundscapes-sans text-base leading-relaxed text-soundscapes-graphite">
-                Rooms are tuned for calm—materials chosen for how they feel and how they sound. There's space to sit, to notice, to hear detail you've never heard before.
+            <div className="text-center">
+              <p className="font-soundscapes-sans text-base leading-relaxed text-soundscapes-graphite mb-8">
+                Surrounded by quiet architecture and the rhythm of nature, you find space to breathe, to notice, to disconnect.
               </p>
             </div>
             
-            <div>
-              <h3 className="font-soundscapes-serif font-light text-xl text-soundscapes-graphite mb-4">
-                Hospitality, quietly done.
-              </h3>
+            <div className="text-center">
+              <p className="font-soundscapes-sans text-base leading-relaxed text-soundscapes-graphite mb-8">
+                It's luxury, but stripped of excess — nothing more than what belongs.
+              </p>
+            </div>
+            
+            <div className="text-center">
+              <p className="font-soundscapes-sans text-base leading-relaxed text-soundscapes-graphite mb-4">
+                And when the moment feels right, press play.
+              </p>
               <p className="font-soundscapes-sans text-base leading-relaxed text-soundscapes-graphite">
-                Simple comforts, unhurried service, and a cellar of records to explore. Technology is there to help, then it gets out of the way.
+                Get lost in your own soundtrack, like you've never heard it before.
               </p>
             </div>
           </div>
@@ -64,7 +67,7 @@ const Soundscapes = () => {
           {/* Call to action */}
           <div className="text-center max-w-md mx-auto pt-8">
             <p className="font-soundscapes-sans text-base leading-relaxed text-soundscapes-graphite">
-              If you're still curious, leave your email. We'll share the next chapter when it's ready.
+              Want the next update in your inbox?
             </p>
           </div>
         </div>
