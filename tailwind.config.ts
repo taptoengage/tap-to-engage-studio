@@ -20,6 +20,8 @@ export default {
 			fontFamily: {
 				serif: ['var(--font-serif)'],
 				sans: ['var(--font-sans)'],
+				'soundscapes-serif': ['Cormorant Garamond', 'serif'],
+				'soundscapes-sans': ['Inter', 'sans-serif'],
 			},
 			fontSize: {
 				'base': ['17px', '1.6'],
@@ -32,6 +34,12 @@ export default {
 				paper: 'hsl(var(--paper))',
 				linen: 'hsl(var(--linen))',
 				sepia: 'hsl(var(--sepia))',
+				
+				/* Soundscapes brand colors */
+				'soundscapes-graphite': 'hsl(220, 6%, 8%)',
+				'soundscapes-warm-stone': 'hsl(50, 22%, 88%)',
+				'soundscapes-soft-brass': 'hsl(38, 37%, 60%)',
+				'soundscapes-forest-eucalypt': 'hsl(130, 14%, 24%)',
 				
 				/* Semantic tokens */
 				border: 'hsl(var(--border))',
