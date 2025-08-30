@@ -90,12 +90,14 @@ const Index = () => {
           <p className="text-lg leading-relaxed text-foreground mb-8">
             A slow, thoughtful retreat for listening. Architecture, landscape, and a serious audio system—held together by quiet design.
           </p>
-          <button 
-            onClick={scrollToContact}
+          <a 
+            href="/soundscapes"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block px-6 py-3 bg-foreground text-background hover:bg-soil transition-colors duration-150 text-sm font-medium"
           >
-            Keep me posted
-          </button>
+            Curious?
+          </a>
         </div>
       </Section>
 
